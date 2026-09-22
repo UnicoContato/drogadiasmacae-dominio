@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Droga Dias Macae | Farmacia, perfumaria e entrega</title>
+  <meta name="description" content="Droga Dias em Macae: medicamentos, perfumaria, higiene pessoal, artigos de saude e atendimento humanizado desde 2019.">
+  <meta name="keywords" content="Droga Dias, farmacia em Macae, drogaria, medicamentos, perfumaria, Parque Aeroporto">
+  <meta name="author" content="Droga Dias">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Droga Dias Macae">
+  <meta property="og:description" content="Cuidando de voce desde 2019 com atendimento humanizado, qualidade e precos acessiveis.">
+  <meta property="og:url" content="https://drogadiasmacae.com.br/">
+  <meta property="og:image" content="https://drogadiasmacae.com.br/img/fachada.jpeg">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://drogadiasmacae.com.br/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317263a'/%3E%3Cpath d='M18 44 32 14l14 30-14-8z' fill='%230ea5e9'/%3E%3Cpath d='M32 14 46 44l-14-8z' fill='%23e11d48'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#e11d48',
+              blue: '#0ea5e9',
+              ink: '#17263a',
+              glass: 'rgba(255,255,255,.14)'
+            }
+          },
+          boxShadow: {
+            glow: '0 24px 80px rgba(14, 165, 233, .24)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white antialiased">
+  <header id="siteHeader" class="fixed left-0 right-0 top-0 z-50 transition-transform duration-500">
+    <nav class="mx-auto mt-4 flex w-[min(1120px,calc(100%-32px))] items-center justify-between rounded-2xl border border-white/15 bg-slate-950/55 px-4 py-3 shadow-2xl backdrop-blur-2xl md:px-6">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Droga Dias">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="text-lg font-black tracking-normal text-white">Droga Dias</span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-semibold text-white/80 lg:flex">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#sobre">Sobre Nos</a>
+        <a class="nav-link" href="#servicos">Servicos</a>
+        <a class="nav-link" href="#diferenciais">Diferenciais</a>
+        <a class="nav-link" href="#galeria">Galeria</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </div>
+      <div class="hidden items-center gap-3 lg:flex">
+        <a class="whatsapp-btn" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Droga%20Dias." target="_blank" rel="noopener">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Peca pelo WhatsApp
+        </a>
+      </div>
+      <button id="menuButton" class="mobile-toggle lg:hidden" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu mx-auto hidden w-[min(1120px,calc(100%-32px))] rounded-2xl border border-white/15 bg-slate-950/80 p-4 shadow-2xl backdrop-blur-2xl lg:hidden">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre Nos</a>
+      <a href="#servicos">Servicos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+      <a class="whatsapp-btn mt-2 justify-center" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Droga%20Dias." target="_blank" rel="noopener">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Peca pelo WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero min-h-screen overflow-hidden">
+      <img src="img/fachada.jpeg" alt="Fachada da Droga Dias em Macae" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-light hero-light-blue"></div>
+      <div class="hero-light hero-light-red"></div>
+      <div class="relative z-10 mx-auto grid min-h-screen w-[min(1120px,calc(100%-32px))] items-center gap-10 pt-28 lg:grid-cols-[1.05fr_.95fr]">
+        <div class="max-w-3xl reveal">
+          <span class="eyebrow">Farmacia, perfumaria e cuidado perto de voce</span>
+          <h1 class="mt-6 text-5xl font-black leading-tight tracking-normal text-white sm:text-6xl lg:text-7xl">Droga Dias</h1>
+          <p class="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">Cuidando de voce desde 2019 com atendimento humanizado, variedade, qualidade e precos acessiveis em Macae.</p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a class="primary-cta" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Droga%20Dias." target="_blank" rel="noopener">
+              Faca seu pedido
+            </a>
+            <a class="secondary-cta" href="#galeria">Conheca a loja</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>Desde 2019</strong>
+              <span>cuidando da comunidade</span>
+            </div>
+            <div>
+              <strong>Tele-entrega</strong>
+              <span>pedido direto pelo WhatsApp</span>
+            </div>
+            <div>
+              <strong>Parque Aeroporto</strong>
+              <span>loja fisica em Macae</span>
+            </div>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Resumo da Droga Dias">
+          <div class="hero-card-top">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <strong>Droga Dias</strong>
+              <span>Farmacia e perfumaria</span>
+            </div>
+          </div>
+          <div class="hero-card-photo">
+            <img src="img/interior-02.jpeg" alt="Interior da Droga Dias">
+          </div>
+          <div class="hero-checklist">
+            <span>Medicamentos sem manipulacao</span>
+            <span>Perfumaria, cosmeticos e higiene</span>
+            <span>Artigos medicos e ortopedicos</span>
+            <span>Atendimento proximo e humano</span>
+          </div>
+          <a class="secondary-cta w-full justify-center" href="#contato">Ver contato e localizacao</a>
+        </aside>
+      </div>
+      <div class="hero-strip">
+        <span>Medicamentos</span>
+        <span>Perfumaria</span>
+        <span>Higiene pessoal</span>
+        <span>Artigos medicos</span>
+        <span>Tele-entrega</span>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <section class="proof-band">
+      <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-4 md:grid-cols-3">
+        <div class="proof-card reveal">
+          <span>01</span>
+          <h3>Atendimento acolhedor</h3>
+          <p>Uma equipe presente para orientar com clareza e receber cada cliente com cuidado.</p>
+        </div>
+        <div class="proof-card reveal">
+          <span>02</span>
+          <h3>Variedade no dia a dia</h3>
+          <p>Medicamentos, perfumaria, higiene pessoal e itens de saude em um so lugar.</p>
+        </div>
+        <div class="proof-card reveal">
+          <span>03</span>
+          <h3>Compra mais pratica</h3>
+          <p>Contato direto pelo WhatsApp para facilitar pedidos, duvidas e tele-entrega.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div class="reveal">
+          <span class="section-kicker">Sobre nos</span>
+          <h2 class="section-title">Uma historia feita de cuidado, confianca e proximidade.</h2>
+        </div>
+        <div class="glass-panel reveal">
+          <p>Em 2019, nasceu a Droga Dias, com um proposito simples, mas muito especial: cuidar de pessoas e fazer parte da vida da nossa comunidade.</p>
+          <p>Comecamos com um sonho e, ao longo dos anos, fomos crescendo, aprendendo e construindo uma historia feita de trabalho, dedicacao, confianca e muito carinho pelos nossos clientes.</p>
+          <p>Hoje, olhamos para tras com orgulho de tudo o que conquistamos e, principalmente, por cada pessoa que escolheu a Droga Dias para cuidar de si e da sua familia.</p>
+          <p>Mais do que uma farmacia, somos uma equipe que acredita em atendimento humanizado, qualidade, precos acessiveis e proximidade com nossos clientes.</p>
+          <p>Desde 2019, seguimos escrevendo essa historia juntos. Droga Dias, cuidando de voce desde 2019.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section-muted">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <span class="section-kicker">Servicos</span>
+          <h2 class="section-title">Tudo para facilitar o cuidado do dia a dia.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+            <h3>Medicamentos</h3>
+            <p>Produtos farmaceuticos para sua rotina, com orientacao atenciosa e foco no que voce precisa.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+            <h3>Perfumaria e higiene</h3>
+            <p>Cosmeticos, produtos de perfumaria e itens de higiene pessoal para toda a familia.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+<path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Atendimento</h3>
+            <p>Equipe proxima, escuta cuidadosa e tele-entrega para ajudar voce com praticidade.</p>
+          </article>
+        </div>
+        <div class="category-panel reveal">
+          <div>
+            <span class="section-kicker">Categorias</span>
+            <h3>Produtos selecionados para saude, bem-estar e rotina.</h3>
+          </div>
+          <div class="category-grid">
+            <span>Farmaceuticos</span>
+            <span>Cosmeticos</span>
+            <span>Higiene pessoal</span>
+            <span>Perfumaria</span>
+            <span>Artigos medicos</span>
+            <span>Artigos ortopedicos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="section">
+      <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div class="feature-photo reveal">
+          <img src="img/perfumaria.jpeg" alt="Prateleiras de perfumaria e cuidados pessoais da Droga Dias">
+        </div>
+        <div class="reveal">
+          <span class="section-kicker">Diferenciais</span>
+          <h2 class="section-title">Uma experiencia de compra simples, organizada e confiavel.</h2>
+          <div class="feature-list">
+            <div>
+              <strong>Loja bem abastecida</strong>
+              <p>Ambientes organizados por categorias para facilitar a escolha dos produtos.</p>
+            </div>
+            <div>
+              <strong>Atendimento direto</strong>
+              <p>Contato por telefone e WhatsApp para pedidos, duvidas e informacoes sobre disponibilidade.</p>
+            </div>
+            <div>
+              <strong>Presenca local</strong>
+              <p>Endereco cadastrado em Parque Aeroporto, com facil acesso para clientes da regiao.</p>
+            </div>
+          </div>
+          <a class="primary-cta mt-8" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Droga%20Dias." target="_blank" rel="noopener">Falar com a loja</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div class="max-w-2xl reveal">
+            <span class="section-kicker">Galeria</span>
+            <h2 class="section-title">Conheca a Droga Dias por dentro e por fora.</h2>
+          </div>
+        </div>
+        <div class="gallery-grid mt-12">
+          <figure class="gallery-item gallery-large reveal">
+            <img src="img/fachada.jpeg" alt="Fachada da Droga Dias em Macae">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="img/interior-01.jpeg" alt="Prateleiras da Droga Dias">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="img/corredor.jpeg" alt="Corredor de produtos da Droga Dias">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="img/interior-02.jpeg" alt="Interior iluminado da Droga Dias">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="img/perfumaria.jpeg" alt="Setor de perfumaria da Droga Dias">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-muted">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <span class="section-kicker">Contato e localizacao</span>
+          <h2 class="section-title">Estamos em Parque Aeroporto, Macae.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <div class="contact-card reveal">
+            <dl>
+              <div>
+                <dt>CNPJ</dt>
+                <dd>31.884.806/0001-13</dd>
+              </div>
+              <div>
+                <dt>Nome empresarial</dt>
+                <dd>DROGA MAIS PRODUTOS FARMACEUTICOS E HOSPITALARES LTDA</dd>
+              </div>
+              <div>
+                <dt>Logradouro, numero e complemento</dt>
+                <dd>R Luiz Carlos Aprigio, 13, Loja 01 e 02</dd>
+              </div>
+              <div>
+                <dt>Bairro/Distrito</dt>
+                <dd>Parque Aeroporto</dd>
+              </div>
+              <div>
+                <dt>Municipio - UF</dt>
+                <dd>Macae - RJ</dd>
+              </div>
+              <div>
+                <dt>CEP</dt>
+                <dd>27.963-572</dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd><a href="tel:+552297675308">(22) 9767-5308</a></dd>
+              </div>
+              <div>
+                <dt>Endereco eletronico</dt>
+                <dd>Nao informado no cartao CNPJ</dd>
+              </div>
+            </dl>
+            <a class="primary-cta mt-8 w-full justify-center sm:w-auto" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20falar%20com%20a%20Droga%20Dias." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+          <div class="map-card reveal">
+            <iframe title="Mapa da Droga Dias em Macae" src="https://www.google.com/maps?q=Rua%20Luiz%20Carlos%20Aprigio%2C%2013%2C%20Loja%2001%20e%2002%2C%20Parque%20Aeroporto%2C%20Macae%20RJ%2C%2027963-572&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-slate-950 px-4 py-8 text-sm text-white/65">
+    <div class="mx-auto flex w-[min(1120px,100%)] flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <p>31.884.806/0001-13 - DROGA MAIS PRODUTOS FARMACEUTICOS E HOSPITALARES LTDA - 2026</p>
+      <button id="privacyOpen" type="button" class="privacy-link">Politica de Privacidade</button>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/552297675308?text=Ola%2C%20gostaria%20de%20falar%20com%20a%20Droga%20Dias." target="_blank" rel="noopener" aria-label="Chamar a Droga Dias no WhatsApp">
+    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <div id="privacyModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button id="privacyClose" class="modal-close" type="button" aria-label="Fechar politica de privacidade">x</button>
+      <span class="section-kicker">Privacidade</span>
+      <h2 id="privacyTitle" class="mt-3 text-3xl font-black text-white">Politica de Privacidade</h2>
+      <div class="mt-6 space-y-4 text-white/75">
+        <p>Este site tem finalidade institucional e apresenta informacoes sobre a Droga Dias, seus produtos, atendimento e localizacao.</p>
+        <p>O site nao solicita cadastro, nao possui formularios de coleta de dados pessoais e nao realiza venda direta dentro da pagina. Ao clicar em links de contato, como telefone, WhatsApp ou mapa, o visitante passa a utilizar servicos de terceiros, sujeitos as politicas dessas plataformas.</p>
+        <p>Dados tecnicos basicos podem ser processados pelo navegador, provedor de hospedagem ou servicos externos apenas para funcionamento, seguranca, exibicao do mapa e compartilhamento da pagina.</p>
+        <p>Para duvidas sobre privacidade ou atendimento, entre em contato pelos canais exibidos nesta pagina.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
